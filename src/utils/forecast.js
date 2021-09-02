@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
         weather_descriptions: body.current.weather_descriptions[0],
         temperature: body.current.temperature,
         feels_like: body.current.feelslike,
-        summary: `${body.current.weather_descriptions[0]} - It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out.`,
+        summary: `${body.current.weather_descriptions[0]} - It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out. The humidty is ${body.current.humidity}%. The UV Index is ${body.current.uv_index}.`,
       });
     }
   });
